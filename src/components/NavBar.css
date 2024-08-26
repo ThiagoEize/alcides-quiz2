@@ -1,0 +1,80 @@
+ 
+  .nav-container {
+    position: fixed;
+    top:10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-radius: 16px;
+    color: #FDD549;
+    font-size: 1.2rem;
+    width: 50%;
+    background-color: #3f3f3f;
+    padding: .5rem
+  }
+  
+  .quiz-indicator {
+    margin-right: 30px;
+  }
+  
+  .quizs {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: auto;
+  }
+  
+  .quiz {
+    background-color: #FDD549;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .quiz.active {
+    width: 50px; /* This makes the circle elongated when active */
+    border-radius: 25px; /* This will keep the ends rounded */
+    background-color: #6f42c1;
+  }
+  
+  .quiz:not(.active) {
+    cursor: pointer;
+  }
+  
+  /* Hide the default link styles */
+  .quiz a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 27px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-container {
+      top:4px;
+      display: flex;
+      padding: .4rem 1rem .4rem 1rem;
+      align-items: center;
+      border-radius: 16px;
+      color: #FDD549;
+      font-size: 1.2rem;
+      width: 88%;
+    }
+    .quiz {
+      background-color: #FDD549;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      margin: 0 4px;
+      transition: all 0.3s ease;
+    }
+    
+    .quiz-indicator {
+      margin-right: 20px;
+    }
+  }

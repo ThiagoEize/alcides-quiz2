@@ -1,0 +1,90 @@
+.questions-wrapper {
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.question-image-placeholder {
+  height: 360px; /* Fixed height */
+  width: 100%; /* Full width */
+  margin-bottom: 1rem; /* Space below the image placeholder */
+  overflow: hidden; /* Hide the parts of the image that exceed the container */
+}
+
+.question-image-placeholder img {
+  width: 100%; /* Full width within the container */
+  height: 100%; /* Full height within the container */
+  border-radius: 8px; /* Rounded corners as per your design */
+  object-fit: cover; /* Cover the container without distorting the image */
+}
+
+/* Restyle the heading */
+.question-component-text {
+  font-family: Inter;
+  font-weight: 800;
+  line-height: 50px;
+  word-wrap: break-word;
+  align-self: left;
+  font-size: 35px !important;
+  width: 100%;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Adjust as necessary to match the specific spacing */
+}
+
+/* Restyle the 'Next question' button */
+.question-button {
+  color:white;
+  padding: 6px; /* Ample padding for larger button size */
+  border-radius: 10px; /* Rounded corners as per your design */
+  cursor: pointer; /* Cursor to indicate it's clickable */
+  margin-top: 1rem; /* Space above the button */
+  width: 100%; /* The button will occupy the full width of its container */
+  transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.question-button:hover {
+  background-color: #7B68EE;
+}
+
+
+.option-button {
+  color:white;
+  width: 100%;
+  height: 100%;
+  background: #3F3F3F;
+  border-radius: 10px;
+  border: 2px #656565 solid;
+  font-size: 20px !important;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 30px;
+  word-wrap: break-word;
+  text-align: left;
+  margin-bottom: 8px;
+  padding: 12px;
+}
+
+.option-button:hover {
+  background-color: #505050; /* Change button color on hover */
+}
+
+/* Add a new class for the selected option */
+.option-button.selected {
+  background-color: #6F42C1; /* Change background color for selected option */
+  color: #FFFFFF;
+}
+  
+  @media (max-width: 768px) {
+    .questions-wrapper {
+      width: 90%; /* Full width on smaller screens */
+      margin-top: 4rem;
+    }
+    
+    .question-image-placeholder {
+      height: 200px; /* Adjust height on smaller screens */
+    }
+  }

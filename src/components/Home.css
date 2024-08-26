@@ -1,0 +1,288 @@
+/* Set the font to a default size for the document */
+  
+  .top-section {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin:0;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    
+  }
+  
+  .top-text-container {
+    width: 45%;
+    font-size: 35px; /* Adjust the font size as needed */
+    padding: 16px 32px; /* Padding inside the section */
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 50px;
+    word-wrap: break-word
+  }
+  
+  .top-text-container h2 {
+    font-size: 35px; 
+    font-family: Inter; 
+    font-weight: 800;
+    line-height: 50px; 
+    word-wrap: break-word
+  }
+  
+  
+  .image-placeholder {
+    margin-left: auto;
+    width: 45%;
+    height: auto
+     /* Set to your image's aspect ratio */
+    /* background-color: #C0C0C0; Placeholder color, replace with your image */
+  }
+  
+  .image-placeholder img {
+    width: 100%; /* Full width within the container */
+    height: 100%; /* Full height within the container */
+    border-radius: 6px; /* Rounded corners as per your design */
+  }
+  
+  /* Rest of the CSS remains the same */
+  
+  
+  .vocational-quiz-container {
+    display: flex;
+    width: 80%; /* Full width minus some padding */
+    margin:0;
+  }
+  
+  .text-section {
+    width: 100%;
+    padding: 42px;
+    background-color: #3C3C3E; /* Slightly lighter grey for the container */
+    background: #3C3C3E; /* Matching the container background */
+    color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right:12px
+  }
+  
+  .title {
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+  }
+  
+  .gratis-badge {
+    background-color: #FFD60A;
+    padding: 0 24px 0 24px;
+    border-radius: 12px;
+    display: inline-block;
+    font-size: 35px;
+    font-weight: bold;
+    color: #565656
+    
+  }
+  
+  .comecar-button-section {
+    width: 30%;
+    background:#9D5EFB !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+  }
+  
+  .comecar-button {
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+    transition: background-color 0.3s ease;
+    align-self: stretch;
+    
+    
+  }
+  
+  .comecar-button div p {
+    /* width: 90%; */
+    align-content: 'center';
+    line-height: 50px !important;
+    font-size: 35px !important;
+    margin-bottom: 1rem;
+  }
+  
+  /* width: '70%', alignContent: 'center', margin: 'auto auto' */
+  
+  .comecar-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .how-to-section {
+    width: 80%;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 1px solid #E0E0E0;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 26.20px;
+    word-wrap: break-word;
+    margin: 32px;
+    padding: 42px !important;
+    background-color: #1e1c21;
+  }
+  
+  .how-to-section h2{
+    margin-bottom: 1.5rem;
+  }
+  
+  .how-to-section p{
+    margin-bottom: 1rem;
+  }
+  
+  .how-to-section ol{
+    margin-left: 1.4rem;
+  }
+  /* Sobre */
+  
+.about-container {
+     /* Or the specific width from your image */
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: #fdd549;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 26.20px;
+    word-wrap: break-word;
+    padding: 2rem 12.2% 1rem 12.2%;
+}
+
+.about-container h1 {
+    color: #1E1C21;
+    font-size: 35px; /* Or the specific size from your image */
+    margin-bottom: 1rem;
+}
+
+.about-container p {
+    font-size: 18px; /* Or the specific size from your image */
+    line-height: 27px;
+    margin-bottom: 1rem; /* Add margin between paragraphs if needed */
+    color: #1E1C21;
+    font-weight: 500;
+}
+  
+  @media (max-width: 768px) {
+    .comecar-button-section{
+      display: flex;
+      height: 200px !important;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0
+    }
+    
+    .comecar-button{
+      height: 100%;
+      width: 100% !important;
+      padding: 0
+    }
+    
+    .comecar-button img{
+      padding: 0
+    }
+    
+    .enroll-button {
+      height: 100%;
+    }
+    .vocational-quiz-container {
+      width: 90%; /* Full width minus some padding */
+    }
+    .top-section {
+      flex-direction: column; /* Stack the child elements vertically on small screens */
+      align-items: flex-start; /* Align items to the start of the container */
+      width: 96%;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  
+    .top-text-container {
+      width: 100%; /* Full width for the text container on small screens */
+      margin-bottom: 1rem; /* Add some space below the text container */
+    }
+    
+    .about-container {
+      padding: 5%;
+    }
+  
+    .top-image-container {
+      order: 2; /* Ensure the image comes after the text */
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    
+    .top-text-container {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  
+    .image-placeholder {
+      width: 100%; /* Full width for the image on small screens */
+      height: auto; /* Adjust height automatically to maintain aspect ratio */
+      order:-1;
+      
+    }
+  
+    /* Adjustments for .comecar-button-section and other sections as previously described */
+    .comecar-button-section {
+      order: 3;
+      height: 30%;
+      padding: 0;
+      
+    }
+  
+    .how-to-section {
+      order: 4;
+      margin-bottom: 10rem;
+    }
+    
+    .vocational-quiz-container {
+      flex-direction: column; /* Stack children vertically on small screens */
+    }
+  
+    .text-section {
+      width: 100%; /* Full width for the text section */
+      padding: 20px; /* Adjust padding as needed */
+      margin-bottom: 1rem; /* Add some space below the text section */
+    }
+  
+    .comecar-button-section {
+      width: 100%; /* Full width for the button section */
+      height:18rem;
+      padding:0;
+      justify-content: top; /* Center the button horizontally */
+    }
+  
+    .comecar-button {
+      width: auto; /* Allow the button to grow as per its content */
+      margin: 0 auto; /* Center the button within its container */
+    }
+  
+    .how-to-section {
+      width: 100%; /* Full width for the how-to section */
+      margin: 1rem; /* Space above the how-to section */
+      word-wrap: break-word;
+      width: 90%;
+      padding: 20px !important
+    }
+    
+    .how-to-section ol li{
+      width: 90%; /* Full width for the how-to section */
+      margin-right: 2rem; /* Space above the how-to section */
+      word-wrap: break-word
+    }
+  }
+  

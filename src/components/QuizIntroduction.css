@@ -1,0 +1,94 @@
+.quiz-introduction-container {
+  border-radius: 10px;
+  padding: 32px; /* Adjusted padding to closely match the design */
+  text-align: left; /* Align text to the left as in the design */
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26.20px;
+  word-wrap: break-word
+}
+.quiz-introduction-container h2 {
+  font-weight: 800;
+  line-height: 44px;
+  word-wrap: break-word
+}
+.quiz-introduction-container p,li {
+  font-weight: 400;
+  line-height: 26.20px;
+  word-wrap: break-word;
+}
+
+.quiz-intro-steps p,li{
+  color:white;
+  padding:0;
+  margin: 0;
+}
+
+.quiz-intro-heading,
+.quiz-intro-subheading,
+.quiz-intro-steps p,
+.quiz-intro-steps ol,
+.quiz-intro-action h2,
+.quiz-intro-action p {
+  margin: 16px 0; /* Spacing between elements */
+}
+
+.quiz-intro-heading {
+  margin-bottom: 8px; /* Reduced space below the heading */
+}
+
+.quiz-intro-subheading {
+  margin-bottom: 2rem;
+  margin-top: 0; /* No space above the subheading */
+}
+
+.quiz-intro-steps {
+    padding: 16px 32px;
+    background-color: #3C3C3E;
+    border-radius: 8px;
+}
+
+.quiz-intro-steps ol {
+  list-style: none; /* Remove default list styling */
+  padding-left: 0; /* Remove default padding */
+  counter-reset: step-counter; /* Initialize a counter */
+}
+
+.quiz-intro-steps ol li {
+  counter-increment: step-counter; /* Increment the counter */
+  margin-bottom: 8px; /* Space between list items */
+}
+
+.quiz-intro-steps ol li::before {
+  content: counter(step-counter) '. '; /* Add a period and space after the number */
+  font-weight: bold; /* Make the number bold */
+}
+
+.quiz-intro-action {
+  margin-top: 24px; /* Additional space before the action section */
+}
+
+.quiz-action-heading {
+  margin-bottom: 8px; /* Reduced space below the action heading */
+}
+
+
+.quiz-action-button {
+    color:white;
+    background-color: #6F42C1; /* Purple background color for the button */
+    padding: 12px 24px; /* Ample padding for larger button size */
+    border-radius: 8px; /* Rounded corners as per your design */
+    cursor: pointer; /* Cursor to indicate it's clickable */
+    margin-top: 3rem; /* Space above the button */
+    width: 100%; /* The button will occupy the full width of its container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow for depth, as per your design */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+    display: block; /* Display block to allow width and margin to be effective */
+    
+    font-weight: 400;
+    line-height: 26.20px;
+    word-wrap: break-word
+  }
+
+
+/* Consider adding media queries for responsiveness if needed */
