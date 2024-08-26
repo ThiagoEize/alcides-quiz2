@@ -37,7 +37,7 @@ const ResultCard = () => {
       <div className="result-card-container">
         <div className="result-header">
           <div className="result-header-side-div">
-            <div className="header-side-div-text">
+            <div width={"100%"}>
               <p style={{ color: "#FDD549" }}>Resultado</p>
               {arquetipo === "cuidador" && (
                 <>
@@ -195,7 +195,7 @@ const ResultCard = () => {
               </p>
             )}
           </div>
-          <div
+          {/* <div
             className="related-jobs"
             style={{
               backgroundColor: "#3F3F3F",
@@ -302,7 +302,7 @@ const ResultCard = () => {
                 </li>
               </ol>
             )}
-          </div>
+          </div> */}
         </div>
 
         {/* <TimerComponent />
