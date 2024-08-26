@@ -7,7 +7,7 @@ import artista from "../assets/gifs/Sua criatividade não tem limites.gif";
 import cuidador from "../assets/gifs/Você nasceu para cuidar.gif";
 import lider from "../assets/gifs/Você tem a liderança no sangue.gif";
 // import share from '../assets/images/share.png';
-import TimerComponent from "./TimerComponent";
+// import TimerComponent from "./TimerComponent";
 // import EmbedComponent from './EmbedComponent';
 
 const ResultCard = () => {
@@ -17,20 +17,20 @@ const ResultCard = () => {
     const whatsappLink = `https://api.whatsapp.com/send?phone=5551993708248&text=Recebi%20meu%20resultado%20do%20Quiz!%0A`; // Create the WhatsApp link
     window.open(whatsappLink, "_blank"); // Open the WhatsApp link in a new tab
   };
-  const enrolmentRedirect = () => {
-    if (arquetipo === "cuidador")
-      window.location.href =
-        "https://alcidesmaya.edu.br/curso-tecnico-administracao";
-    if (arquetipo === "tecnico")
-      window.location.href =
-        "https://alcidesmaya.edu.br/curso-tecnico-informatica";
-    if (arquetipo === "lider")
-      window.location.href =
-        "https://alcidesmaya.edu.br/curso-tecnico-informatica";
-    if (arquetipo === "artista")
-      window.location.href =
-        "https://alcidesmaya.edu.br/curso-tecnico-administracao";
-  };
+  // const enrolmentRedirect = () => {
+  //   if (arquetipo === "cuidador")
+  //     window.location.href =
+  //       "https://alcidesmaya.edu.br/curso-tecnico-administracao";
+  //   if (arquetipo === "tecnico")
+  //     window.location.href =
+  //       "https://alcidesmaya.edu.br/curso-tecnico-informatica";
+  //   if (arquetipo === "lider")
+  //     window.location.href =
+  //       "https://alcidesmaya.edu.br/curso-tecnico-informatica";
+  //   if (arquetipo === "artista")
+  //     window.location.href =
+  //       "https://alcidesmaya.edu.br/curso-tecnico-administracao";
+  // };
 
   return (
     <>
