@@ -1,10 +1,11 @@
 import React from "react";
 import "./ResultCard.css"; // Importing the CSS file
 import { useParams } from "react-router-dom";
-// import visionario from '../assets/gifs/visionario.gif';
-// import criador from '../assets/gifs/criador.gif';
-// import estrategista from '../assets/gifs/estrategista2.gif';
-// import guardiao from '../assets/gifs/guardiao4.gif';
+import tecnico from "../assets/gifs/O futuro te chama.gif";
+import ambientalista from "../assets/gifs/O planeta conta com você.gif";
+import artista from "../assets/gifs/Sua criatividade não tem limites.gif";
+import cuidador from "../assets/gifs/Você nasceu para cuidar.gif";
+import lider from "../assets/gifs/Você tem a liderança no sangue.gif";
 // import share from '../assets/images/share.png';
 import TimerComponent from "./TimerComponent";
 // import EmbedComponent from './EmbedComponent';
@@ -17,16 +18,16 @@ const ResultCard = () => {
     window.open(whatsappLink, "_blank"); // Open the WhatsApp link in a new tab
   };
   const enrolmentRedirect = () => {
-    if (arquetipo === "visionario")
+    if (arquetipo === "cuidador")
       window.location.href =
         "https://alcidesmaya.edu.br/curso-tecnico-administracao";
-    if (arquetipo === "criador")
+    if (arquetipo === "tecnico")
       window.location.href =
         "https://alcidesmaya.edu.br/curso-tecnico-informatica";
-    if (arquetipo === "estrategista")
+    if (arquetipo === "lider")
       window.location.href =
         "https://alcidesmaya.edu.br/curso-tecnico-informatica";
-    if (arquetipo === "guardiao")
+    if (arquetipo === "artista")
       window.location.href =
         "https://alcidesmaya.edu.br/curso-tecnico-administracao";
   };
@@ -38,47 +39,71 @@ const ResultCard = () => {
           <div className="result-header-side-div">
             <div className="header-side-div-text">
               <p style={{ color: "#FDD549" }}>Resultado</p>
-              {arquetipo === "visionario" && (
+              {arquetipo === "cuidador" && (
                 <>
-                  <h2>O Visionário</h2>
+                  <h2>Você nasceu para cuidar!</h2>
                   <p>
-                    Tipo de pessoa que não só sonha grande, mas também faz
-                    acontecer. Com uma cabeça cheia de ideias e um coração
-                    inspirador, está sempre um passo à frente, transformando o
-                    "e se" em realidade. Liderança é com ela mesmo, inspirando
-                    todos ao seu redor a mirar mais alto.
+                    Sua vocação está na Saúde e Bem-Estar. Imagine-se salvando
+                    vidas como Técnico em Enfermagem, desvendando mistérios do
+                    corpo humano em Análises Clínicas, ou revelando o interior
+                    das pessoas (literalmente!) em Radiologia. Que tal
+                    transformar vidas como um expert em Nutrição e Dietética? O
+                    mundo precisa do seu toque de cura!
                   </p>
                 </>
               )}
 
-              {arquetipo === "criador" && (
+              {arquetipo === "tecnico" && (
                 <>
-                  <h2>O Criador</h2>
+                  <h2>O futuro te chama!</h2>
                   <p>
-                    O mundo é um palco, e o criador está sempre pronto para
-                    transformar o ordinário em extraordinário. Sua criatividade
-                    não conhece limites, expressando isso em cada coisa que faz!
+                    Tecnologia e Inovação correm nas suas veias. Você pode ser o
+                    próximo gênio da Programação, revolucionar o mundo com
+                    Eletrônica, ou dar vida às máquinas com Mecatrônica. Como
+                    Técnico em Informática, você será o herói que todos chamam
+                    quando o sistema cai. Prepare-se para moldar o amanhã!
                   </p>
                 </>
               )}
 
-              {arquetipo === "estrategista" && (
+              {arquetipo === "lider" && (
                 <>
-                  <h2>O Estrategista</h2>
+                  <h2>Você tem a liderança no sangue!</h2>
                   <p>
-                    A vida é um xadrez gigante, e o estrategista está sempre
-                    três jogadas à frente.
+                    Gestão e Negócios são sua praia. Imagine-se comandando
+                    empresas como um ás da Administração, equilibrando números
+                    na Contabilidade, ou sendo o mestre das entregas na
+                    Logística. Em Recursos Humanos, você será o cupido
+                    corporativo, unindo talentos e oportunidades. O mundo dos
+                    negócios aguarda seu toque de Midas!
                   </p>
                 </>
               )}
 
-              {arquetipo === "guardiao" && (
+              {arquetipo === "artista" && (
                 <>
-                  <h2>O Guardião</h2>
+                  <h2>Sua criatividade não tem limites!</h2>
                   <p>
-                    O Guardião é o coração e alma de qualquer equipe. Com uma
-                    empatia inabalável e um desejo genuíno de ajudar, ele se
-                    dedica a fazer a diferença na vida das pessoas.
+                    Criatividade e Design são seu playground. Como Designer
+                    Gráfico, você dará vida a ideias. No Marketing, seu trabalho
+                    será viralizar sonhos. Transforme espaços como Designer de
+                    Interiores, ditando tendências na Moda, ou conte histórias
+                    através da Produção Audiovisual. O mundo é sua tela em
+                    branco!
+                  </p>
+                </>
+              )}
+
+              {arquetipo === "ambientalista" && (
+                <>
+                  <h2>O planeta conta com você!</h2>
+                  <p>
+                    Meio Ambiente e Sustentabilidade são sua missão. Como
+                    Técnico em Meio Ambiente, você será o guardião da Terra. No
+                    Agronegócio, alimentará o mundo de forma sustentável. Com
+                    Energias Renováveis, iluminará o futuro, e em Segurança do
+                    Trabalho, protegerá nosso bem mais precioso: as pessoas.
+                    Prepare-se para ser o herói que o planeta precisa!
                   </p>
                 </>
               )}
@@ -90,13 +115,22 @@ const ResultCard = () => {
                         </div> */}
           </div>
           <div className="result-header-image-container">
-            {/* <img src={
-                            arquetipo === 'visionario' ? visionario :
-                                arquetipo === 'criador' ? criador :
-                                    arquetipo === 'estrategista' ? estrategista :
-                                        arquetipo === 'guardiao' ? guardiao :
-                                            ''
-                        } alt={arquetipo} /> */}
+            <img
+              src={
+                arquetipo === "cuidador"
+                  ? cuidador
+                  : arquetipo === "tecnico"
+                  ? tecnico
+                  : arquetipo === "lider"
+                  ? lider
+                  : arquetipo === "artista"
+                  ? artista
+                  : arquetipo === "ambientalista"
+                  ? ambientalista
+                  : ""
+              }
+              alt={arquetipo}
+            />
             <div className="image-placeholder"></div>
           </div>
         </div>
@@ -110,50 +144,54 @@ const ResultCard = () => {
             style={{ backgroundColor: "#3F3F3F", borderRadius: "16px" }}
           >
             <h2>Seu perfil</h2>
-            {arquetipo === "visionario" && (
+            {arquetipo === "cuidador" && (
               <p>
-                Olha, sabe o mundo dos negócios?
-                <br></br>
-                <br></br>
-                Parece que foi feito pra você! Líder nato, inspira aqueles ao
-                seu redor a alcançarem seus objetivos, navegando pelo mundo dos
-                negócios com determinação e criatividade.
-                <br></br>
-                <br></br>
-                Para o Visionário, cada desafio é uma oportunidade de
-                crescimento e inovação.
+                Você tem uma incrível capacidade de cuidar e se preocupar com o
+                bem-estar dos outros. Seja na área da saúde ou no apoio social,
+                você se destaca por sua empatia e dedicação. O mundo precisa de
+                pessoas como você, que estão dispostas a fazer a diferença na
+                vida dos outros. Seu destino está em profissões que envolvem
+                cuidado, suporte e uma mão amiga.
               </p>
             )}
-            {arquetipo === "criador" && (
+            {arquetipo === "tecnico" && (
               <p>
-                Seja através de pixels, pincéis ou palavras, você expressa sua
-                essência, emocionando e inspirando.
-                <br></br>
-                <br></br>
-                Para você, cada projeto é uma tela em branco esperando para ser
-                preenchida com cores vibrantes da sua paixão.
+                A tecnologia corre em suas veias, e você tem uma mente voltada
+                para a inovação. Sempre buscando a próxima solução tecnológica,
+                você é o tipo de pessoa que adora desafios lógicos e técnicos.
+                Você se destaca em ambientes que exigem precisão, raciocínio
+                rápido e a capacidade de transformar problemas complexos em
+                soluções simples.
               </p>
             )}
-            {arquetipo === "estrategista" && (
+            {arquetipo === "lider" && (
               <p>
-                Com uma mente aguçada e um amor por detalhes, ele desvenda os
-                mistérios do universo, seja através de números, códigos ou
-                teorias complexas.
-                <br></br>
-                <br></br>
-                Seu negócio é solucionar quebra-cabeças, decifrar enigmas e
-                transformar complexidade em simplicidade.
+                Com uma habilidade natural para liderar e inspirar, você é
+                aquele que os outros procuram em busca de orientação e direção.
+                Sua capacidade de tomar decisões assertivas e estratégicas o
+                coloca à frente em ambientes de gestão e liderança. Para você,
+                cada desafio é uma oportunidade de demonstrar suas habilidades e
+                guiar sua equipe ao sucesso.
               </p>
             )}
-            {arquetipo === "guardiao" && (
+            {arquetipo === "artista" && (
               <p>
-                Seja cuidando da saúde física e emocional ou lutando por justiça
-                social, o Guardião está sempre lá, oferecendo uma mão amiga e um
-                ombro para se apoiar.
-                <br></br>
-                <br></br>
-                Para ele, a verdadeira realização vem em servir e conectar-se
-                com os outros.
+                A criatividade é sua marca registrada, e você vê o mundo como
+                uma tela em branco, pronta para ser preenchida com suas ideias
+                inovadoras. Seja nas artes visuais, design ou comunicação, você
+                se destaca por sua capacidade de transformar pensamentos
+                abstratos em obras que inspiram e emocionam. Seu talento para
+                capturar a essência do que é belo e significativo é inigualável.
+              </p>
+            )}
+            {arquetipo === "ambientalista" && (
+              <p>
+                A natureza e a sustentabilidade são suas paixões, e você se
+                dedica a proteger e preservar o meio ambiente. Com um forte
+                senso de responsabilidade ecológica, você se empenha em criar
+                soluções que beneficiem o planeta. Sua vocação está em carreiras
+                que envolvem o cuidado com o meio ambiente e a promoção de
+                práticas sustentáveis.
               </p>
             )}
           </div>
@@ -166,7 +204,7 @@ const ResultCard = () => {
             }}
           >
             <h2>Profissões relacionadas</h2>
-            {arquetipo === "visionario" && (
+            {arquetipo === "cuidador" && (
               <ol>
                 <li>
                   <b>Empreendedor:</b> Aquele que transforma sonhos em negócios
@@ -177,8 +215,8 @@ const ResultCard = () => {
                   recursos para entregar resultados.
                 </li>
                 <li>
-                  <b>Consultor de Negócios:</b> O estrategista que orienta
-                  empresas a alcançarem seus objetivos.
+                  <b>Consultor de Negócios:</b> O lider que orienta empresas a
+                  alcançarem seus objetivos.
                 </li>
                 <li>
                   <b>Especialista em Marketing:</b> O criativo que sabe como
@@ -190,7 +228,7 @@ const ResultCard = () => {
                 </li>
               </ol>
             )}
-            {arquetipo === "criador" && (
+            {arquetipo === "tecnico" && (
               <ol>
                 <li>
                   <b>Designer Gráfico:</b> O mago das cores e formas que
@@ -214,7 +252,7 @@ const ResultCard = () => {
                 </li>
               </ol>
             )}
-            {arquetipo === "estrategista" && (
+            {arquetipo === "lider" && (
               <ol>
                 <li>
                   <b>Engenheiro de Software:</b> O inovador que constrói o
@@ -238,7 +276,7 @@ const ResultCard = () => {
                 </li>
               </ol>
             )}
-            {arquetipo === "guardiao" && (
+            {arquetipo === "artista" && (
               <ol>
                 <li>
                   <b>Analista de Recursos Humanos:</b> Responsável por recrutar,
@@ -267,10 +305,10 @@ const ResultCard = () => {
           </div>
         </div>
 
-        <TimerComponent />
+        {/* <TimerComponent />
         <div className="course-offer-container">
           <div className="course-offer">
-            {arquetipo === "visionario" && (
+            {arquetipo === "cuidador" && (
               <div className="course-offer-course">
                 <b style={{ marginBottom: ".5rem" }}>
                   Um curso para o seu perfil:
@@ -289,7 +327,7 @@ const ResultCard = () => {
                 </p>
               </div>
             )}
-            {arquetipo === "criador" && (
+            {arquetipo === "tecnico" && (
               <div className="course-offer-course">
                 <b style={{ marginBottom: ".5rem" }}>
                   Um curso para o seu perfil:
@@ -309,7 +347,7 @@ const ResultCard = () => {
                 </p>
               </div>
             )}
-            {arquetipo === "estrategista" && (
+            {arquetipo === "lider" && (
               <div className="course-offer-course">
                 <b style={{ marginBottom: ".5rem" }}>
                   Um curso para o seu perfil:
@@ -331,7 +369,34 @@ const ResultCard = () => {
                 </p>
               </div>
             )}
-            {arquetipo === "guardiao" && (
+            {arquetipo === "artista" && (
+              <div className="course-offer-course">
+                <b style={{ marginBottom: ".5rem" }}>
+                  Um curso para o seu perfil:
+                </b>
+                <h2>Técnico em Administração</h2>
+                <p>
+                  O curso que vai preparar você para liderar e inovar no mundo
+                  dos negócios: Técnico em Administração. Aqui você aprende a
+                  criar estratégias de negócios eficazes, onde toda organização
+                  se torna mais eficiente e competitiva. Promovendo crescimento,
+                  sustentabilidade e excelência operacional dentro das empresas.
+                  Este curso prepara os alunos com habilidades essenciais para
+                  planejar, organizar e controlar atividades empresariais,
+                  assegurando que cada processo contribua para o sucesso
+                  organizacional. É ideal para quem deseja implementar práticas
+                  de gestão inovadoras nas mais diversas áreas, desde o
+                  financeiro até o marketing, passando pela logística. Através
+                  de uma abordagem que une o pensamento analítico à visão
+                  estratégica, este curso é fundamental para formar líderes
+                  eficazes que reconhecem a importância de otimizar recursos e
+                  processos, criando ambientes de trabalho produtivos e
+                  motivadores, que refletem diretamente no crescimento e na
+                  sustentabilidade do negócio.
+                </p>
+              </div>
+            )}
+            {arquetipo === "ambientalista" && (
               <div className="course-offer-course">
                 <b style={{ marginBottom: ".5rem" }}>
                   Um curso para o seu perfil:
@@ -380,8 +445,7 @@ const ResultCard = () => {
               </p>
             </button>
           </div>
-          {/* <p className='saiba-mais'><b>Leia mais sobre seu perfil abaixo</b></p> */}
-        </div>
+        </div> */}
 
         <div className="seller">
           <button
@@ -399,11 +463,11 @@ const ResultCard = () => {
           </button>
         </div>
       </div>
-      {/* {(arquetipo === 'visionario' || arquetipo === 'guardiao') &&
+      {/* {(arquetipo === 'cuidador' || arquetipo === 'artista') &&
                 <EmbedComponent src='https://alcidesmaya.edu.br/curso-tecnico-administracao' height={7400} />
             }
 
-            {(arquetipo === 'estrategista' || arquetipo === 'criador') &&
+            {(arquetipo === 'lider' || arquetipo === 'tecnico') &&
                 <EmbedComponent src='https://alcidesmaya.edu.br/curso-tecnico-informatica' height={7400} />
             } */}
     </>

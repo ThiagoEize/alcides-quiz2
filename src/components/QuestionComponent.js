@@ -19,11 +19,11 @@ const QuestionComponent = () => {
 
     // Calculate the sum of a1, a2, a3, a4, a5 for each selected option
     const arquetypeSums = [
-      { key: "Saúde e bem-estar", value: 0 },
-      { key: "Tecnologia e inovação", value: 0 },
-      { key: "Gestão e Negócios", value: 0 },
-      { key: "Criatividade e design", value: 0 },
-      { key: "Meio ambiente e sustentabilidade", value: 0 },
+      { key: "cuidador", value: 0 },
+      { key: "tecnico", value: 0 },
+      { key: "lider", value: 0 },
+      { key: "artista", value: 0 },
+      { key: "ambientalista", value: 0 },
     ];
 
     selectedOptions.forEach((option) => {
@@ -43,16 +43,16 @@ const QuestionComponent = () => {
 
     // Define a message based on the top result
     const resultMessage = {
-      "Saúde e bem-estar":
-        "Sua área é Saúde e bem-estar. Cursos como Técnico em Enfermagem, Radiologia, Análises Clínicas ou Nutrição e Dietética podem ser ideais para você.",
-      "Tecnologia e inovação":
-        "Sua área é Tecnologia e inovação. Cursos como Técnico em Informática, Programação, Eletrônica ou Mecatrônica podem ser perfeitos para você.",
-      "Gestão e Negócios":
-        "Sua área é Gestão e Negócios. Cursos como Técnico em Administração, Contabilidade, Logística ou Recursos Humanos podem ser ótimas opções para você.",
-      "Criatividade e design":
-        "Sua área é Criatividade e design. Cursos como Técnico em Design Gráfico, Design de Interiores, Moda ou Produção Audiovisual podem ser ideais para você.",
-      "Meio ambiente e sustentabilidade":
-        "Sua área é Meio ambiente e sustentabilidade. Cursos como Técnico em Meio Ambiente, Agronegócio, Energias Renováveis ou Segurança do Trabalho podem ser perfeitos para você.",
+      cuidador:
+        "Sua vocação está na Saúde e Bem-Estar. Imagine-se salvando vidas como Técnico em Enfermagem, desvendando mistérios do corpo humano em Análises Clínicas, ou revelando o interior das pessoas (literalmente!) em Radiologia. Que tal transformar vidas como um expert em Nutrição e Dietética? O mundo precisa do seu toque de cura!",
+      tecnico:
+        "O futuro te chama! Tecnologia e Inovação correm nas suas veias. Você pode ser o próximo gênio da Programação, revolucionar o mundo com Eletrônica, ou dar vida às máquinas com Mecatrônica. Como Técnico em Informática, você será o herói que todos chamam quando o sistema cai. Prepare-se para moldar o amanhã!",
+      lider:
+        "Você tem a liderança no sangue! Gestão e Negócios são sua praia. Imagine-se comandando empresas como um ás da Administração, equilibrando números na Contabilidade, ou sendo o mestre das entregas na Logística. Em Recursos Humanos, você será o cupido corporativo, unindo talentos e oportunidades. O mundo dos negócios aguarda seu toque de Midas!",
+      artista:
+        "Sua criatividade não tem limites! Criatividade e Design são seu playground. Como Designer Gráfico, você dará vida a ideias. No Marketing, seu trabalho será viralizar sonhos. Transforme espaços como Designer de Interiores, ditando tendências na Moda, ou conte histórias através da Produção Audiovisual. O mundo é sua tela em branco!.",
+      ambientalista:
+        "O planeta conta com você! Meio Ambiente e Sustentabilidade são sua missão. Como Técnico em Meio Ambiente, você será o guardião da Terra. No Agronegócio, alimentará o mundo de forma sustentável. Com Energias Renováveis, iluminará o futuro, e em Segurança do Trabalho, protegerá nosso bem mais precioso: as pessoas. Prepare-se para ser o herói que o planeta precisa!.",
     }[sortedArquetypes[0].key];
 
     alert(
@@ -96,6 +96,9 @@ const QuestionComponent = () => {
   return (
     <div className="vocational-quiz-wrapper questions-wrapper">
       <NavBar />
+      <div className="question-image-placeholder">
+        <img src={question.gif} alt="Question" />
+      </div>
       <h2 className="question-component-text">{question.title}</h2>
       {question.options.map((option, index) => (
         <button

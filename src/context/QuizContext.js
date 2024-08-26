@@ -5,6 +5,7 @@ import gif2 from "../assets/gifs/q2.gif";
 import gif3 from "../assets/gifs/q3.gif";
 import gif4 from "../assets/gifs/q4.gif";
 import gif5 from "../assets/gifs/q5.gif";
+// import gif5 from "../assets/gifs/q5.gif";
 // import gif6 from "../assets/gifs/q6.gif";
 // import gif7 from "../assets/gifs/q7.gif";
 
