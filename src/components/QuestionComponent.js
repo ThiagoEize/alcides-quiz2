@@ -42,18 +42,18 @@ const QuestionComponent = () => {
     });
 
     // Define a message based on the top result
-    const resultMessage = {
-      cuidador:
-        "Sua vocação está na Saúde e Bem-Estar. Imagine-se salvando vidas como Técnico em Enfermagem, desvendando mistérios do corpo humano em Análises Clínicas, ou revelando o interior das pessoas (literalmente!) em Radiologia. Que tal transformar vidas como um expert em Nutrição e Dietética? O mundo precisa do seu toque de cura!",
-      tecnico:
-        "O futuro te chama! Tecnologia e Inovação correm nas suas veias. Você pode ser o próximo gênio da Programação, revolucionar o mundo com Eletrônica, ou dar vida às máquinas com Mecatrônica. Como Técnico em Informática, você será o herói que todos chamam quando o sistema cai. Prepare-se para moldar o amanhã!",
-      lider:
-        "Você tem a liderança no sangue! Gestão e Negócios são sua praia. Imagine-se comandando empresas como um ás da Administração, equilibrando números na Contabilidade, ou sendo o mestre das entregas na Logística. Em Recursos Humanos, você será o cupido corporativo, unindo talentos e oportunidades. O mundo dos negócios aguarda seu toque de Midas!",
-      artista:
-        "Sua criatividade não tem limites! Criatividade e Design são seu playground. Como Designer Gráfico, você dará vida a ideias. No Marketing, seu trabalho será viralizar sonhos. Transforme espaços como Designer de Interiores, ditando tendências na Moda, ou conte histórias através da Produção Audiovisual. O mundo é sua tela em branco!.",
-      ambientalista:
-        "O planeta conta com você! Meio Ambiente e Sustentabilidade são sua missão. Como Técnico em Meio Ambiente, você será o guardião da Terra. No Agronegócio, alimentará o mundo de forma sustentável. Com Energias Renováveis, iluminará o futuro, e em Segurança do Trabalho, protegerá nosso bem mais precioso: as pessoas. Prepare-se para ser o herói que o planeta precisa!.",
-    }[sortedArquetypes[0].key];
+    // const resultMessage = {
+    //   cuidador:
+    //     "Sua vocação está na Saúde e Bem-Estar. Imagine-se salvando vidas como Técnico em Enfermagem, desvendando mistérios do corpo humano em Análises Clínicas, ou revelando o interior das pessoas (literalmente!) em Radiologia. Que tal transformar vidas como um expert em Nutrição e Dietética? O mundo precisa do seu toque de cura!",
+    //   tecnico:
+    //     "O futuro te chama! Tecnologia e Inovação correm nas suas veias. Você pode ser o próximo gênio da Programação, revolucionar o mundo com Eletrônica, ou dar vida às máquinas com Mecatrônica. Como Técnico em Informática, você será o herói que todos chamam quando o sistema cai. Prepare-se para moldar o amanhã!",
+    //   lider:
+    //     "Você tem a liderança no sangue! Gestão e Negócios são sua praia. Imagine-se comandando empresas como um ás da Administração, equilibrando números na Contabilidade, ou sendo o mestre das entregas na Logística. Em Recursos Humanos, você será o cupido corporativo, unindo talentos e oportunidades. O mundo dos negócios aguarda seu toque de Midas!",
+    //   artista:
+    //     "Sua criatividade não tem limites! Criatividade e Design são seu playground. Como Designer Gráfico, você dará vida a ideias. No Marketing, seu trabalho será viralizar sonhos. Transforme espaços como Designer de Interiores, ditando tendências na Moda, ou conte histórias através da Produção Audiovisual. O mundo é sua tela em branco!.",
+    //   ambientalista:
+    //     "O planeta conta com você! Meio Ambiente e Sustentabilidade são sua missão. Como Técnico em Meio Ambiente, você será o guardião da Terra. No Agronegócio, alimentará o mundo de forma sustentável. Com Energias Renováveis, iluminará o futuro, e em Segurança do Trabalho, protegerá nosso bem mais precioso: as pessoas. Prepare-se para ser o herói que o planeta precisa!.",
+    // }[sortedArquetypes[0].key];
 
     // alert(
     //   resultMessage +
