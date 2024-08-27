@@ -55,10 +55,10 @@ const QuestionComponent = () => {
         "O planeta conta com você! Meio Ambiente e Sustentabilidade são sua missão. Como Técnico em Meio Ambiente, você será o guardião da Terra. No Agronegócio, alimentará o mundo de forma sustentável. Com Energias Renováveis, iluminará o futuro, e em Segurança do Trabalho, protegerá nosso bem mais precioso: as pessoas. Prepare-se para ser o herói que o planeta precisa!.",
     }[sortedArquetypes[0].key];
 
-    alert(
-      resultMessage +
-        "\nAgora que você descobriu sua área ideal, que tal dar o próximo passo? Conheça nossos cursos técnicos e encontre o que te levará ao sucesso!"
-    );
+    // alert(
+    //   resultMessage +
+    //     "\nAgora que você descobriu sua área ideal, que tal dar o próximo passo? Conheça nossos cursos técnicos e encontre o que te levará ao sucesso!"
+    // );
   };
 
   const currentQuestionIndex = parseInt(questionIndex, 10) - 1;
